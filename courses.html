@@ -16,16 +16,28 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        
     </head>
-    <body class="d-flex flex-column h-100 bg-warning">
-        <main class="flex-shrink-0 container bg-light">
+    <body class="d-flex flex-column h-100 bg-secondary">
+      <a class="d-none d-lg-block" href="/index.html">
+        <div style="height: 100px; background-image: url('assets/banner.png'); background-size: contain;"></div>
+      </a>
+      <main class="flex-shrink-0 container mt-5 bg-light">
             <!-- Navigation-->
             <div id="navbar-container"></div>
             <!-- Header-->
             <header class="py-5">
                 <div class="container px-5 pb-5">
                     <div class="row gx-5">
-                      <div class="col-xxl-8">
+                      <div class="col-lg-8">
                         <h2>Cours</h2>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quia unde quasi iusto est, provident eaque optio commodi temporibus nam aspernatur similique tempore dolore. Totam mollitia doloribus eveniet! Id, exercitationem.
                         <br><br>
@@ -33,22 +45,38 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam sint vitae corporis ipsum, perspiciatis tenetur molestiae. Saepe quos delectus magni, repudiandae non itaque voluptatum consequuntur eligendi quisquam mollitia? Inventore, ratione.
                       
                       </div>
-                      <div class="col-xxl-4">
+                      <div class="col-lg-4">
                           <!-- Content Picture -->
-                          <div class="d-flex border border-4 rounded border-warning justify-content-center my-5 mt-xxl-0">
+                          <div class="d-flex justify-content-center my-5 mt-lg-0">
                               <img class="text-center rounded object-fit-contain w-100" src="assets/cours.png" />
                           </div>
+                      </div>
+                      <div class="col-12 mb-4">
+                        <h3>Localisation</h3>
+                        <div id="map"></div>
+                      </div>
+                      <div class="col-12 mb-2">
+                        <h3>A domicile</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vitae dignissimos possimus modi amet, aliquid dolorum officiis quibusdam totam voluptates harum consectetur perferendis laborum numquam sit id quisquam ex quos!
+                        </p>
+                      </div>
+                      <div class="col-12 mb-2">
+                        <h3>Comité d'entreprise</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut ullam sapiente necessitatibus, nostrum a, iure quisquam sit nihil voluptate atque error commodi dolores iste dolorum quam obcaecati perspiciatis ab accusamus.
+                        </p>
                       </div>
                     </div>
                     <hr>
                     <div class="row gx-5">
-                      <div class="col-xxl-4">
+                      <div class="col-lg-4">
                         <!-- Content Picture -->
-                        <div class="d-flex justify-content-center border rounded my-5 mt-xxl-0">
-                          <img class="text-center rounded object-fit-contain w-100" src="assets/essais.png" />
+                        <div class="d-flex justify-content-center my-5 mt-lg-0">
+                          <img class="text-center rounded-circle object-fit-contain w-100" src="assets/essais.png" />
                         </div>
                       </div>
-                      <div class="col-xxl-8">
+                      <div class="col-lg-8">
                         <!-- Content Picture -->
                         <h2>Essais</h2>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quia unde quasi iusto est, provident eaque optio commodi temporibus nam aspernatur similique tempore dolore. Totam mollitia doloribus eveniet! Id, exercitationem:
@@ -63,27 +91,27 @@
                     </div>
                     <hr>
                     <div class="row gx-5">
-                      <div class="col-xxl-6">
-                        <div class="card rounded border-0">
+                      <div class="col-lg-6">
+                        <div class="card bg-secondary rounded border-0">
                           <div class="card-body">
-                            <h5 class="card-title">Un cours spécifique?</h5>
+                            <h5 class="card-title">Un cours specifique?</h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="courses-specific.html" class="btn btn-primary card-link">Cliquer ici</a>
                           </div>
                         </div>
                       </div>
-                      <div class="col-xxl-6">
-                        <div class="card rounded border-0">
+                      <div class="col-lg-6">
+                        <div class="card bg-secondary rounded border-0">
                           <div class="card-body">
-                            <h5 class="card-title">Un cours thématique?</h5>
+                            <h5 class="card-title">Un cours découverte?</h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="courses-thematic.html" class="btn btn-primary card-link">Cliquer ici</a>
                           </div>
                         </div>
+                      </div>
                     </div>
-                </div>
             </header>
             <!-- Footer-->
             <div id="footer-container">
@@ -92,6 +120,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script>
+
+          const map = L.map('map').setView([46.22, 2.21], 13);
+        
+          const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          }).addTo(map);
+        
+        </script>
 
         <!-- COMPONENTS -->
         <script src="js/components/navbar.js"></script>
