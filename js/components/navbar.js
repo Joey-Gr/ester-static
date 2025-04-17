@@ -2,7 +2,7 @@ document.getElementById("navbar-container").innerHTML = `
 <nav class="navbar navbar-expand-lg navbar-light border-bottom py-3">
   <div class="row d-flex container px-5">
     <div class="col-12 col-lg-2">
-      <a href="/">
+      <a href="index.html">
         <img style="height:94px;" src="assets/logo.png">
       </a>
     </div>
