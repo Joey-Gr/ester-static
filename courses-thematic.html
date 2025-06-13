@@ -17,9 +17,10 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body class="d-flex flex-column h-100 bg-secondary">
+    <body class="d-flex flex-column h-100 body-background">
       <a class="d-none d-lg-block" href="index.html">
         <div style="height: 100px; background-image: url('assets/banner.png'); background-size: contain;"></div>
+          <hr class="dashed-divider" />
       </a>
       <main class="flex-shrink-0 container mt-5 bg-light">
             <!-- Navigation-->
@@ -27,90 +28,138 @@
             <!-- Header-->
             <header class="py-5">
                 <div class="container px-5 pb-5">
+                  <h1>Atelier découverte</h1><hr>
                   <div class="row gx-5">
                     <div class="col-12 mb-3">
                       <a href="courses.html" class="btn btn-light card-link">&lt;&nbsp;&nbsp;Retour</a>
                     </div>
-
-                    <div class="col-lg-6">
-                      <div class="card bg-secondary rounded border-0">
-                        <div class="card-body">
-                          <h5 class="card-title">Un cours specifique?</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="courses-specific.html" class="btn btn-primary card-link">Cliquer ici</a>
-                        </div>
+                    <div class="d-flex justify-content-center">
+                      <div class="d-flex align-items-center justify-content-center text-center rounded-circle border border-primary border-4 me-3" style="height: 286px; width: 286px;">
+                        <a href="courses-specific.html">
+                          <h4>Cours généraux</h4>
+                        </a>
                       </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="card bg-secondary rounded border-0">
-                        <div class="card-body">
-                          <h5 class="card-title">Un cours découverte?</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="courses-thematic.html" class="btn btn-primary card-link">Cliquer ici</a>
-                        </div>
+                      <div class="d-flex align-items-center justify-content-center text-center rounded-circle border border-secondary text-secondary border-4 me-3" style="height: 286px; width: 286px;">
+                        <a>
+                          <h4>Atelier découverte</h4>
+                        </a>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center text-center rounded-circle border border-primary border-4 me-3" style="height: 286px; width: 286px;">
+                        <a href="courses-tests.html">
+                          <h4>Essais</h4>
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <br><br>
-                  <h1>Cours thematique</h1><hr>
+                  <hr><br>
                     <div class="row gx-5">
-                      <div class="col-12 mb-3">
-                        <h2>Regions</h2>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quia unde quasi iusto est, provident eaque optio commodi temporibus nam aspernatur similique tempore dolore. Totam mollitia doloribus eveniet! Id, exercitationem.
-                        <br><br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic accusamus quas ea doloribus sunt quibusdam nobis voluptas est? Mollitia ipsa minima cum dolores consequatur nemo animi est doloremque esse culpa.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam sint vitae corporis ipsum, perspiciatis tenetur molestiae. Saepe quos delectus magni, repudiandae non itaque voluptatum consequuntur eligendi quisquam mollitia? Inventore, ratione.
-                      
+                      <div class="col-6">
+                        <h2>R&eacute;gion</h2>
+                        <p>
+                          Cours « r&eacute;gion » 
+                          <span class="badge rounded-pill text-bg-secondary">2H</span>
+                          <span class="badge rounded-pill text-bg-secondary">5 VINS</span>
+                          <span class="badge rounded-pill text-bg-secondary">60€</span>
+                          <br><br>
+                          Des cours par grandes régions viticoles sont proposés tout au long de l’année sur des dates ponctuelles, ils se construisent comme une balade à travers un vignoble dans laquelle seront évoqués l’histoire, les singularités du terroir, les styles de vins produits. Les ateliers « régions » permettent de comprendre et de goûter les subtilités liées au climat et au sol.
+                          <br><br>
+                          4 vins dégustés
+                          <br>
+                          Support avec carte du vignoble
+                          <br><br>
+                          Atelier « Bourgogne »<br>
+                          Atelier « Loire »<br>
+                          Atelier « Vallée du Rhône »<br>
+                          Atelier « Sud-ouest »<br>
+                          Atelier « Bordeaux »<br>
+                          Atelier « Jura, Savoie, Bugey »<br>
+                          Atelier « Languedoc Roussillon »<br>
+                          Atelier « Alsace »
+                        </p>
                       </div>
-                      <div class="col-12">
+                      <div class="col-6">
                           <!-- Content Picture -->
-                          <div class="d-flex border border-4 rounded border-warning justify-content-center my-5 mt-xxl-0">
-                              <img class="text-center rounded object-fit-contain w-100" src="assets/regions.webp" />
+                          <div class="d-flex justify-content-center my-5 mt-xxl-0">
+                              <img class="text-center rounded object-fit-contain w-100" src="assets/logo.png" />
                           </div>
                       </div>
                     </div>
                     <hr>
                     <div class="row gx-5">
-                      <div class="col-lg-4 col-md-6">
-                        <div class="card border-0">
-                        <!-- Content Picture -->
-                        <div class="d-flex justify-content-center rounded my-5 mt-lg-0">
-                          <img class="text-center rounded object-fit-contain mw-100" style="height:216px;" src="assets/cepages.png" />
-                        </div>
-                          <div class="card-body">
-                            <h5 class="card-title">Accords</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          </div>
-                        </div>
+                      <div class="col-6">
+                        <h2>Accords</h2>
+                        <p>
+                          Cours « accords » 
+                          <span class="badge rounded-pill text-bg-secondary">2H</span>
+                          <span class="badge rounded-pill text-bg-secondary">4 VINS</span>
+                          <span class="badge rounded-pill text-bg-secondary">60€</span>
+                          <br><br>
+                          Un atelier pour comprendre l’art d’accorder les mets et les vins. Pendant 2 heures, vous allez apprendre les grandes règles des accords, les « erreurs » courantes ou les difficultés, sans oublier que l’association des mets et des vins est aussi une affaire de goût, et d’inventivité.
+                          <br>
+                          Plusieurs exemples de dégustation mets/vins seront proposés pour mettre la théorie en pratique.
+                          <br><br>
+                          4 vins dégustés en accord avec 4 mets
+                        </p>
                       </div>
-                      <div class="col-lg-4 col-md-6">
-                        <div class="card border-0">
+                      <div class="col-6">
                           <!-- Content Picture -->
-                          <div class="d-flex justify-content-center rounded my-5 mt-lg-0">
-                            <img class="text-center rounded object-fit-contain mw-100" style="height:216px;" src="assets/cepages.png" />
+                          <div class="d-flex justify-content-center my-5 mt-xxl-0">
+                              <img class="text-center rounded object-fit-contain w-100" src="assets/ACCORDS.svg" />
                           </div>
-                          <div class="card-body">
-                            <h5 class="card-title">Types</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          </div>
-                        </div>
                       </div>
-                      <div class="col-lg-4 col-md-6">
-                        <div class="card border-0">
+                    </div>
+                    <hr>
+                    <div class="row gx-5">
+                      <div class="col-6">
+                        <h2>Types de vins</h2>
+                        <p>
+                          Cours « types de vins » 
+                          <span class="badge rounded-pill text-bg-secondary">2H</span>
+                          <span class="badge rounded-pill text-bg-secondary">4 VINS</span>
+                          <span class="badge rounded-pill text-bg-secondary">60€</span>
+                          <br><br>
+                          Ces 3 ateliers proposent d’aborder la connaissance et la dégustation par « types » de vins. Comment sont-ils fabriqués ? Quelle est leur histoire ? Dans quel lieu et pourquoi ? Si vous avez une prédilection pour l’un d’entre eux et que vous souhaitez tout savoir sur eux, tout en apprenant à les déguster, voici les 3 thématiques que nous vous proposons.
+                          <br><br>
+                          <b>Vins effervescents :</b> Différentes régions, différentes méthodes, appellations très connues ou plus confidentielles, nous vous proposons avec cet atelier de goûter 4 échantillons de ces vins issus de terroirs différents et d’apprendre ce qui distingue le champagne, du crémant, ou du pétillant naturel.
+                          <br><br>
+                          <b>Vins oranges :</b> les vins oranges nous offrent une nouvelle façon de déguster les vins blancs et de les apprécier : couleur, structure, corps, ils ont aussi l’avantage de procurer souvent plus d’arômes. Parler des vins oranges c’est aussi voyager de la Géorgie au nord-est de l’Italie, en passant par ce que nous produisons aujourd’hui en France avec une dégustation de 4 vins.
+                          <br><br>
+                          <b>Vins oxydatifs :</b> typiques du Jura, les vins oxydatifs sont parmi les vins les plus longs en bouche qui soient, et existent aussi dans d’autres régions de France et du monde. Nous vous proposons d’explorer les techniques et les différentes régions d’élaboration à travers 4 exemples de vins oxydatifs que nous dégusterons ensemble.
+                        </p>
+                      </div>
+                      <div class="col-6">
                           <!-- Content Picture -->
-                          <div class="d-flex justify-content-center rounded my-5 mt-xxl-0">
-                            <img class="text-center rounded object-fit-contain mw-100" style="height:216px;" src="assets/cepages.png" />
+                          <div class="d-flex justify-content-center my-5 mt-xxl-0">
+                              <img class="text-center rounded object-fit-contain w-100" src="assets/logo.png" />
                           </div>
-                          <div class="card-body">
-                            <h5 class="card-title">C&eacute;pages</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row gx-5">
+                      <div class="col-6">
+                        <h2>C&eacute;pages</h2>
+                        <p>
+                          Cours « c&eacute;pages » 
+                          <span class="badge rounded-pill text-bg-secondary">2H</span>
+                          <span class="badge rounded-pill text-bg-secondary">4 VINS</span>
+                          <span class="badge rounded-pill text-bg-secondary">60€</span>
+                          <br><br>
+                          Un atelier pour connaître et décrypter les cépages et leurs caractéristiques. Le cours comprend une introduction sur l’histoire des cépages puis une analyse sur leurs spécificités de goût et d’arômes, ainsi qu’un repérage de ces cépages dans l’espace viticole.
+                          <br><br>
+                          Cépages principaux : chardonnay, sauvignon, riesling, syrah, pinot noir, merlot, chenin…
+                          <br>
+                          les cépages étudiés sont ceux que l’on considère comme principaux, c’est-à-dire les plus plantés ou les plus emblématiques de certaines régions. Étudier les cépages, permet de mémoriser, reconnaître et classer les vins que l’on déguste et d’apprendre à mieux définir ses goûts personnels.Cépages rares : il s’agit de parler cette fois de cépages moins connus du grand public, comme le pineau d’Aunis, le braucol, l’ondenc ou le césar. Goûter de nouveaux cépages ouvre les horizons gustatifs et permet de connaître l’originalité ou la singularité des régions.
+                          <br><br>
+                          4 vins dégustés
+                          <br>
+                          support : fiches sur les cépages
+                        </p>
+                      </div>
+                      <div class="col-6">
+                          <!-- Content Picture -->
+                          <div class="d-flex justify-content-center my-5 mt-xxl-0">
+                              <img class="text-center rounded object-fit-contain w-100" src="assets/logo.png" />
                           </div>
-                        </div>
                       </div>
                     </div>
             </header>

@@ -11552,10 +11552,41 @@ textarea.form-control-lg {
 body,
 html {
   height: 100%;
+  font-family: sans-serif;
+  font-size: 20px;
 }
 
 #map {
   height: 256px;
+}
+
+.body-background {
+  background-image: url("../assets/background.png");
+}
+
+.dashed-divider {
+  margin: 0px 0;
+  color: aliceblue;
+  border: none;
+  border-bottom: 6px solid;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/vineyard.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-section h1, .hero-section .h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
 }
 
 .bg-gradient-primary-to-secondary {
