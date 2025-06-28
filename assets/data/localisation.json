@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Eiffel Tower",
+    "description": "A famous landmark in Paris.",
+    "lat": 48.8584,
+    "lng": 2.2945
+  },
+  {
+    "name": "Statue of Liberty",
+    "description": "Iconic statue in New York City.",
+    "lat": 40.6892,
+    "lng": -74.0445
+  }
+]

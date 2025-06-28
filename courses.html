@@ -1,150 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Personal - Start Bootstrap Theme</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
 
-        <!-- Leaflet -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-        crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-        crossorigin=""></script>
-        
-    </head>
-    <body class="d-flex flex-column h-100 body-background">
-        <a class="d-none d-lg-block" href="index.html">
-          <div style="height: 100px; background-image: url('assets/banner.png'); background-size: contain;"></div>
-            <hr class="dashed-divider" />
-        </a>
-      <main class="flex-shrink-0 container mt-5 bg-light">
-            <!-- Navigation-->
-            <div id="navbar-container"></div>
-            <!-- Header-->
-            <header class="py-5">
-                <div class="container px-5 pb-5">
-                    <div class="row gx-5 m-auto border rounded-3 bg-white py-5 mb-5" style="max-width:1024px;">
-                      <!-- Cours -->
-                      <div class="col-lg-8">
-                        <div>
-                          <h2>Cours</h2>
-                          <p>Ester propose des cours ou des ateliers autour du vin et de la dégustation destinés à tous les niveaux : un « cours essai » pour s’initier, des « ateliers découverte » pour apprendre et s’amuser, des cours de culture générale avec une progression en 3 étapes pour les plus passionnés, des cours ponctuels ou à l’année si vous le souhaitez, nous vous offrons le choix du format et du sujet. Tous les vins que nous avons choisi de vous faire déguster sont naturels.</p>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                          <!-- Content Picture -->
-                          <div class="d-flex justify-content-center mt-lg-0">
-                              <img class="text-center rounded object-fit-contain w-100" src="assets/cours.png" />
-                          </div>
-                        </div>
-                    </div>
-                        <div class="d-flex justify-content-center">
-                          <div class="d-flex align-items-center justify-content-center text-center rounded-circle border border-primary border-4 me-3" style="height: 286px; width: 286px;">
-                            <a href="courses-specific.html">
-                              <h4>Cours généraux</h4>
-                            </a>
-                          </div>
-                          <div class="d-flex align-items-center justify-content-center text-center rounded-circle border border-primary border-4 me-3" style="height: 286px; width: 286px;">
-                            <a href="courses-thematic.html">
-                              <h4>Atelier découverte</h4>
-                            </a>
-                          </div>
-                         <div class="d-flex align-items-center justify-content-center text-center rounded-circle border border-primary border-4 me-3" style="height: 286px; width: 286px;">
-                            <a href="courses-tests.html">
-                              <h4>Essais</h4>
-                            </a>
-                          </div>
-                        </div>
-                    <br><br>
-                    <hr>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Personal - Start Bootstrap Theme</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Custom Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
 
-                    <div class="row gx-5">
-                      <!-- Localisation -->
-                      <div class="col-lg-6">
-                        <h3>Localisation</h3>
-                        <ul>
-                          <li><a>Location 1</a></li>
-                          <li><a>Location 2</a></li>
-                          <li><a>Location 3</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-lg-6">
-                        <div id="map"></div>
-                      </div>
-                    </div>
-                    
-                    <!-- A domicile -->
-                    <div class="row gx-5">
-                      <div class="col-lg-8">
-                        <h3>A domicile</h3>
-                        <p>
-                          Nous nous déplaçons chez vous pour organiser un cours, un atelier ou un évènement (comme une dégustation vente) selon vos envies. Vous pouvez nous contacter pour plus de renseignements.
-                        </p>
-                      </div>
-                      <div class="col-lg-4">
-                          <div class="d-flex justify-content-center my-5 mt-xxl-0">
-                              <img class="text-center rounded object-fit-contain w-100" src="assets/VENTES_A_DOMICILE.svg" />
-                          </div>
-                      </div>
-                    </div>
-                    
-                    <!-- Comite entreprise -->
-                    <div class="row gx-5">
-                      <div class="col-lg-8">
-                        <h3>Comité d'entreprise</h3>
-                        <p>
-                          Ester organise des évènements pour les comités d’entreprise : cours ou ateliers de dégustation sur un sujet au choix, ventes avec possibilité de présence de nos producteurs ou productrices, animation d’ateliers ludiques pour fédérer vos équipes.Pour demander un devis, <a href="contact.html">contactez-nous</a>.
-                        </p>
-                      </div>
-                      <div class="col-lg-4">
-                          <div class="d-flex justify-content-center my-5 mt-xxl-0">
-                              <img class="text-center rounded object-fit-contain me-5" width="150px" src="assets/ENTREPRISE.png" />
-                          </div>
-                      </div>
-                    </div>
-            </header>
-            <!-- Footer-->
-            <div id="footer-container">
-        </main>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-        <script>
+</head>
 
-          const map = L.map('map').setView([46.225, 2.21], 13);
-          
-          const marker = L.marker([46.22, 2.21]).addTo(map)
-            .bindPopup('<b>Hello world!</b><br />Texte')
-          const marker2 = L.marker([46.23, 2.22]).addTo(map)
-            .bindPopup('<b>Hello world!</b><br />Texte ici aussi')
-          const marker3 = L.marker([46.224, 2.19]).addTo(map)
-            .bindPopup('<b>Hello world!</b><br />Texte aussi là')
-          
-          const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          }).addTo(map);
-        
-        </script>
+<body class="d-flex flex-column h-100 body-background">
+  <a class="d-none d-lg-block" href="index.html">
+    <div style="height: 100px; background-image: url('assets/banner.png'); background-size: contain;"></div>
+    <hr class="dashed-divider" />
+  </a>
+  <main class="flex-shrink-0 container mt-5 bg-light">
+    <!-- Navigation-->
+    <div id="navbar-container"></div>
+    <!-- Header-->
+    <header class="">
+      <div class="container px-5 pt-3">
+        <div class="row gx-5 m-auto border rounded-3 bg-white py-4 mb-3" style="max-width:1024px;">
+          <!-- Cours -->
+          <div class="col-lg-8">
+            <div>
+              <h2>Cours</h2>
+              <p>Ester propose des cours ou des ateliers autour du vin et de la dégustation destinés à tous les niveaux
+                : un « cours essai » pour s’initier, des « ateliers découverte » pour apprendre et s’amuser, des cours
+                de culture générale avec une progression en 3 étapes pour les plus passionnés, des cours ponctuels ou à
+                l’année si vous le souhaitez, nous vous offrons le choix du format et du sujet. Tous les vins que nous
+                avons choisi de vous faire déguster sont naturels.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <!-- Content Picture -->
+            <div class="d-flex justify-content-center mt-lg-0">
+              <img class="text-center rounded object-fit-contain w-100" src="assets/picto/COURS.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="d-block w-50 m-auto d-lg-flex justify-content-center my-3">
+          <a href="courses-general.html" class="m-2 rounded-circle border border-primary border-4 btn btn-primary"
+            data-bs-toggle="tooltip" data-bs-title="Cours généraux">
+            <div class="d-flex align-items-center justify-content-center text-center"
+              style="height: 128px; width: 128px;">
+              <i class="est es-cours-gen es-75"></i>
+            </div>
+          </a>
+          <a href="courses-workshop.html" class="m-2 rounded-circle border border-primary border-4 btn btn-primary"
+            data-bs-toggle="tooltip" data-bs-title="Atelier découverte">
+            <div class="d-flex align-items-center justify-content-center text-center"
+              style="height: 128px; width: 128px;">
+              <i class="est es-ateliers-dec es-75"></i>
+            </div>
+          </a>
+          <a href="courses-tests.html" class="m-2 rounded-circle border border-primary border-4 btn btn-primary"
+            data-bs-toggle="tooltip" data-bs-title="Essais">
+            <div class="d-flex align-items-center justify-content-center text-center"
+              style="height: 128px; width: 128px;">
+              <i class="est es-essai es-75"></i>
+            </div>
+          </a>
+        </div>
+        <hr>
+        <div class="row gx-5">
+          <!-- Localisation -->
+          <div class="col-lg-4">
+            <h3>
+              Localisation<a id="map-reset" class="btn btn-sm" data-bs-toggle="tooltip"
+                data-bs-title="Réinitaliser">🔄</a>
+            </h3>
+            <ul id="location-list" class="list-group"></ul>
+          </div>
+          <div class="col-lg-8">
+            <div class="border border-2 border-dark rounded" id="map" style="height:500px"></div>
+          </div>
+        </div>
+        <hr>
 
-        <!-- COMPONENTS -->
-        <script src="js/components/navbar.js"></script>
-        <script src="js/components/footer.js"></script>
-    </body>
+        <!-- A domicile -->
+        <div class="row gx-5">
+          <div class="col-lg-10">
+            <h3>A domicile</h3>
+            <p>
+              Nous nous déplaçons chez vous pour organiser un cours, un atelier ou un évènement (comme une dégustation
+              vente) selon vos envies. Vous pouvez nous contacter pour plus de renseignements.
+            </p>
+          </div>
+          <div class="col-lg-2">
+            <div class="d-flex justify-content-center mt-xxl-0">
+              <img class="text-center rounded object-fit-contain w-100" src="assets/picto/VENTES_A_DOMICILE.svg" />
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Comite entreprise -->
+        <div class="row gx-5">
+          <div class="col-lg-10">
+            <h3>Comité d'entreprise</h3>
+            <p>
+              Ester organise des évènements pour les comités d’entreprise : cours ou ateliers de dégustation sur un
+              sujet au choix, ventes avec possibilité de présence de nos producteurs ou productrices, animation
+              d’ateliers ludiques pour fédérer vos équipes.
+              <br>
+              Pour demander un devis, <a href="contact.html">contactez-nous</a>.
+            </p>
+          </div>
+          <div class="col-lg-2">
+            <div class="d-flex justify-content-center mt-xxl-0">
+              <img class="text-center rounded object-fit-contain w-100" src="assets/picto/ENTREPRISE.svg" />
+            </div>
+          </div>
+        </div>
+        <br>
+    </header>
+    <!-- Footer-->
+    <div id="footer-container">
+  </main>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+
+  <script>
+    // LEAFLET
+    const defaultCnt = [46, 2]
+    const defaultZm = 5
+
+    const map = L.map('map').setView(defaultCnt, defaultZm);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    let shapes = [];
+    let lastLocationEl = null
+
+    // Reset Map View
+    document.getElementById('map-reset').addEventListener('click', () => {
+      map.setView(defaultCnt, defaultZm);
+      if (lastLocationEl) lastLocationEl.classList.remove('disabled'), lastLocationEl = null
+
+      // Close all popups
+      map.eachLayer(layer => {
+        if (layer.closePopup) layer.closePopup();
+      });
+    });
+
+    fetch('assets/data/localisations.json')
+      .then(res => res.json())
+      .then(data => {
+        const listContainer = document.getElementById('location-list');
+
+        data.forEach((location, index) => {
+          // Check if single point
+          if (location) {
+            let layer = null
+            if (typeof location.coordinates[0] === "number") {
+              // Single point: [lng, lat]
+              const latlng = [location.coordinates[1], location.coordinates[0]];
+              layer = L.marker(latlng, {
+                polygon: false,
+              })
+                .addTo(map)
+                .bindPopup(`<strong>${location.name}</strong><br>${location.description}`);
+            } else {
+              // Convert [lng, lat] to [lat, lng] for Leaflet
+              const latLngs = location.coordinates.map(coord => [coord[1], coord[0]]);
+
+              // Create polygon
+              layer = L.polygon(latLngs, {
+                color: 'cornflowerblue',
+                polygon: true,
+                weight: 2
+              }).addTo(map)
+                .bindPopup(`<strong>${location.name}</strong><br>${location.description}`)
+
+              shapes.push(layer)
+            }
+
+            // Create list item
+            const li = document.createElement('li')
+            li.className = 'list-group-item location-item btn'
+            li.textContent = location.name;
+            li.addEventListener('click', (ev) => {
+              if (lastLocationEl) lastLocationEl.classList.remove('disabled')
+              lastLocationEl = ev.target
+              ev.target.classList.add('disabled')
+              console.log(layer)
+              if (layer.options && layer.options.polygon) map.fitBounds(layer.getBounds())
+              else map.setView(layer.getLatLng(), 9)
+              layer.openPopup()
+            });
+
+            listContainer.appendChild(li)
+          }
+        });
+      });
+
+  </script>
+
+  <!-- COMPONENTS -->
+  <script src="js/components/navbar.js"></script>
+  <script src="js/components/footer.js"></script>
+</body>
+
 </html>

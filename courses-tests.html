@@ -1,133 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Personal - Start Bootstrap Theme</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
 
-        <!-- Leaflet -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-        crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-        crossorigin=""></script>
-        
-    </head>
-    <body class="d-flex flex-column h-100 body-background">
-        <a class="d-none d-lg-block" href="index.html">
-          <div style="height: 100px; background-image: url('assets/banner.png'); background-size: contain;"></div>
-            <hr class="dashed-divider" />
-        </a>
-      <main class="flex-shrink-0 container mt-5 bg-light">
-            <!-- Navigation-->
-            <div id="navbar-container"></div>
-            <!-- Header-->
-            <header class="py-5">
-                <div class="container px-5 pb-5">
-                    <h1>Essais</h1><hr>
-                    <div class="row gx-5">
-                    <div class="col-12 mb-3">
-                      <a href="courses.html" class="btn btn-light card-link">&lt;&nbsp;&nbsp;Retour</a>
-                    </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Personal - Start Bootstrap Theme</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Custom Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
 
-                    <div class="d-flex justify-content-center">
-                      <div class="d-flex align-items-center justify-content-center text-center rounded-circle border border-primary border-4 me-3" style="height: 286px; width: 286px;">
-                        <a href="courses-specific.html">
-                          <h4>Cours généraux</h4>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-center justify-content-center text-center rounded-circle border border-primary border-4 me-3" style="height: 286px; width: 286px;">
-                        <a href="courses-thematic.html">
-                          <h4>Atelier découverte</h4>
-                        </a>
-                      </div>
-                      <div class="d-flex align-items-center justify-content-center text-center rounded-circle border border-secondary text-secondary border-4 me-3" style="height: 286px; width: 286px;">
-                        <a>
-                          <h4>Essais</h4>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <hr><br>
-                  <div class="row gx-5">
-                      <div class="col-lg-8">
-                        <!-- Content Picture -->
-                        <h2>Cour essais</h2>
-                        Un cours « essai » 
-                        <span class="badge rounded-pill text-bg-secondary">1 heure</span>
-                        <span class="badge rounded-pill text-bg-secondary">3 vins</span>
-                        <span class="badge rounded-pill text-bg-secondary">35€</span>
-                        <br><br>
-                        Le cours d’essai propose aux participants de s’initier à la dégustation durant une heure, avec une approche ouverte et libre sur la dégustation. Nous avons à coeur que les débutants commencent par s’exprimer avec leurs mots et leurs sensations, tout en étant guidé par le formateur ou la formatrice. Ce cours est aussi l’occasion de définir ensemble le lexique de base sur le vin et la dégustation. 
-                        <br><br>
-                        Les thèmes abordés
-                        <ul>
-                          <li>
-                            lexique de base sur le vin : « cépages », « vin », « dégustation ».
-                          </li>
-                          <li>
-                            initiation à la dégustation.
-                          </li>
-                          <li>
-                            encouragement à donner votre avis et à exprimer vos goûts simplement
-                          </li>
-                        </ul>
-                        Tous niveaux
-                        <ul>
-                          <li>
-                            2/3 vins dégustés
-                          </li>
-                          <li>
-                            Tarif : 35 €
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="col-lg-4">
-                        <!-- Content Picture -->
-                        <div class="d-flex justify-content-center my-5 mt-lg-0">
-                          <img class="text-center rounded-circle object-fit-contain w-100" src="assets/ESSAIS.svg" />
-                        </div>
-                      </div>
-                    </div>
-                  <br><br>
-            </header>
-            <!-- Footer-->
-            <div id="footer-container">
-        </main>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-        <script>
+</head>
 
-          const map = L.map('map').setView([46.225, 2.21], 13);
-          
-          const marker = L.marker([46.22, 2.21]).addTo(map);
-          const marker2 = L.marker([46.23, 2.22]).addTo(map);
-          const marker3 = L.marker([46.224, 2.19]).addTo(map);
-          const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          }).addTo(map);
-        
-        </script>
+<body class="d-flex flex-column h-100 body-background">
+  <a class="d-none d-lg-block" href="index.html">
+    <div style="height: 100px; background-image: url('assets/banner.png'); background-size: contain;"></div>
+    <hr class="dashed-divider" />
+  </a>
+  <main class="flex-shrink-0 container mt-5 bg-light">
+    <!-- Navigation-->
+    <div id="navbar-container"></div>
+    <!-- Header-->
+    <header class="">
+      <div class="container px-5 pb-5">
+        <div class="pb-lg-0 pb-4">
+          <a href="courses.html" class="position-absolute btn btn-light card-link">&lt;&nbsp;&nbsp;Retour</a>
+        </div>
+        <div class="d-block w-50 m-auto d-lg-flex justify-content-center my-3">
+          <a href="courses-general.html" class="m-3 rounded-circle border border-primary border-4 btn btn-primary"
+            data-bs-toggle="tooltip" data-bs-title="Cours généraux">
+            <div class="d-flex align-items-center justify-content-center text-center"
+              style="height: 128px; width: 128px;">
+              <i class="est es-cours-gen es-5x"></i>
+            </div>
+          </a>
+          <a href="courses-workshop.html" class="m-3 rounded-circle border border-primary border-4 btn btn-primary"
+            data-bs-toggle="tooltip" data-bs-title="Atelier découverte">
+            <div class="d-flex align-items-center justify-content-center text-center"
+              style="height: 128px; width: 128px;">
+              <i class="est es-ateliers-dec es-5x"></i>
+            </div>
+          </a>
+          <a href="courses-tests.html"
+            class="disabled m-3 rounded-circle border border-primary border-4 btn btn-primary" data-bs-toggle="tooltip"
+            data-bs-title="Essais">
+            <div class="d-flex align-items-center justify-content-center text-center"
+              style="height: 128px; width: 128px;">
+              <i class="est es-essai es-4x"></i>
+            </div>
+          </a>
+        </div>
+        <hr>
+        <div class="row gx-5">
+          <div class="col-lg-8">
+            <!-- Content Picture -->
+            <h2>Essai</h2>
+            Un cours « essai »
+            <span class="badge rounded-pill text-bg-secondary">1 heure</span>
+            <span class="badge rounded-pill text-bg-secondary">3 vins</span>
+            <span class="badge rounded-pill text-bg-secondary">35€</span>
+            <br><br>
+            Le cours d’essai propose aux participants de s’initier à la dégustation durant une heure, avec une approche
+            ouverte et libre sur la dégustation. Nous avons à coeur que les débutants commencent par s’exprimer avec
+            leurs mots et leurs sensations, tout en étant guidé par le formateur ou la formatrice. Ce cours est aussi
+            l’occasion de définir ensemble le lexique de base sur le vin et la dégustation.
+            <br><br>
+            Les thèmes abordés
+            <ul>
+              <li>
+                lexique de base sur le vin : « cépages », « vin », « dégustation ».
+              </li>
+              <li>
+                initiation à la dégustation.
+              </li>
+              <li>
+                encouragement à donner votre avis et à exprimer vos goûts simplement
+              </li>
+            </ul>
+            Tous niveaux
+            <ul>
+              <li>
+                2/3 vins dégustés
+              </li>
+              <li>
+                Tarif : 35 €
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <!-- Content Picture -->
+            <div class="d-flex justify-content-center my-5 mt-lg-0">
+              <img class="text-center rounded-circle object-fit-contain w-100" src="assets/picto/ESSAI.svg" />
+            </div>
+          </div>
+        </div>
+        <br><br>
+    </header>
+    <!-- Footer-->
+    <div id="footer-container">
+  </main>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
 
-        <!-- COMPONENTS -->
-        <script src="js/components/navbar.js"></script>
-        <script src="js/components/footer.js"></script>
-    </body>
+  <script>
+
+    const map = L.map('map').setView([46.225, 2.21], 13);
+
+    const marker = L.marker([46.22, 2.21]).addTo(map);
+    const marker2 = L.marker([46.23, 2.22]).addTo(map);
+    const marker3 = L.marker([46.224, 2.19]).addTo(map);
+    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+  </script>
+
+  <!-- COMPONENTS -->
+  <script src="js/components/navbar.js"></script>
+  <script src="js/components/footer.js"></script>
+</body>
+
 </html>

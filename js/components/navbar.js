@@ -6,7 +6,7 @@ document.getElementById("navbar-container").innerHTML = `
         <img style="height:94px;" src="assets/logo.png">
       </a>
     </div>
-    <div class="col-12 col-lg-8">
+    <div class="col-12 col-lg-10">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 small fw-bolder">
@@ -19,7 +19,6 @@ document.getElementById("navbar-container").innerHTML = `
           </ul>
       </div>
     </div>
-    <div class="col-12 col-lg-2"></div>
   </div>
 </nav> 
 `;
